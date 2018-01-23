@@ -63,8 +63,7 @@ Start it with this command:
 7. You can verify that the two processes are in sync with the following commands:
 ```
     ./programs/eosioc/eosioc -p 8888 get info ; ./programs/eosioc/eosioc -p 8889 get info
-```
-You should see the head_block_num and last_irreversible_block_num increasing in tandem.
+```You should see the head_block_num and last_irreversible_block_num increasing in tandem.
 8. You can also verify that the second process' producer is generating blocks by looking in the data_dir2/std.txt log file. You should periodically (every minute or so) see a group of eight blocks produced by the initt producer. These lines of the log file should look something like this:
 ```
     initt generated block 0c71b76a... #240 @ 2018-01-23T20:33:19.000 with 0 trxs
